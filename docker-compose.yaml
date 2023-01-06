@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  react-ecs-sample:
+    container_name: react-ecs-sample
+    image: ${IMAGE}
+    ports:
+      - 80:80
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 2048M
